@@ -23,7 +23,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+    /* so box shadow shows */
+    position: relative;
+    z-index: 20;
 }
+
 header div {
     
     background: var(--secondary-color);
@@ -71,3 +76,23 @@ header nav ul li a:hover {
     border-bottom: none;
 }
 
+/* hero style */
+
+.hero {
+    background-image: url(../images/banner.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero h2 {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border-radius: 25px;
+    font-size: 42px;
+    position: absolute;
+    padding: 15px 10px;
+    bottom: 25px;
+    right: 120px;
+}
