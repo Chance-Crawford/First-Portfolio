@@ -10,9 +10,14 @@
     box-sizing: border-box;
 }
 
+
 body {
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
+}
+
+section{
+    padding: 60px;
 }
 
 /* header style */
@@ -96,3 +101,129 @@ header nav ul li a:hover {
     bottom: 25px;
     right: 120px;
 }
+
+/* About Me style */
+
+.my-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.my-info h2 {
+    font-size: 48px;
+    text-align: right;
+    padding: 20px;
+    flex: 1 10%;
+
+}
+
+.my-info div {
+    padding: 20px 40px; 
+    border-left: 5px solid var(--tertiary-color);
+    flex: 3 70%;
+}
+
+.my-info p {
+    font-size: 20px;
+}
+
+/* Work style */
+
+
+.work {
+    display: flex;
+    justify-content: center;
+}
+
+.work h2 {
+    font-size: 48px;
+    text-align: right;
+    padding: 20px;
+    /* 
+    Tweak this when you add another pic to flex 
+    */
+    flex: 1 16.6%;
+
+}
+
+.pics {
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 5px solid var(--tertiary-color);
+}
+
+.pics a:focus {
+    color: var(--tertiary-color);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* container for normal pictures in work */
+.pic {
+    background-position: center;
+    background-size: cover;
+    border: 6px solid var(--primary-color);
+    opacity: 0.85;
+    position: relative;
+    flex: 1 40%;
+    margin: 0 20px 25px 20px;
+}
+
+/* height for normal pics in work */
+.pic-height {
+    height: 300px;
+}
+
+.pic:hover {
+    opacity: 1;
+}
+
+/* these styles only apply to the jumbo pic at top of "work" section
+all other styles inherited by .pic
+*/
+.jumbo {
+    background-image: url(../images/runbuddy.jpg);
+    height: 500px;
+    width: 1156px;
+    flex: 5 85%;
+    
+}
+
+.pic div {
+    padding: 20px;
+    background: var(--primary-color);
+    position: absolute;
+    bottom: 25px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/* picture background images, jumbo is declared above in its own class */
+
+.pic-img-1 {
+    background-image: url(../images/placeholder-1.jpg);
+}
+
+.pic-img-2 {
+    background-image: url(../images/placeholder-2.jpg);
+}
+
+.pic-img-3 {
+    background-image: url(../images/placeholder-3.jpg);
+}
+
+.pic-img-4 {
+    background-image: url(../images/placeholder-4.jpg);
+}
+
+/* Contact Me section style */
+
+
