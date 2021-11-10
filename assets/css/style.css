@@ -160,15 +160,16 @@ header nav ul li a:hover {
     /* 
     Tweak this when you add another pic to flex 
     */
-    flex: 1 16.7%;
+    width: 15%;
 
 }
 
 .pics {
-    padding: 20px 40px;
+    padding: 20px 20px;
     display: flex;
     flex-wrap: wrap;
     border-left: 5px solid var(--tertiary-color);
+    width: 85%;
 }
 
 .pics a:focus {
@@ -283,6 +284,60 @@ h4 {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1335px) {
+
+    header {
+        justify-content: center;
+        padding-right: 0;
+
+    }
+
+    header div h1 {
+        padding: 15px 20px 15px 20px;
+    }
+
+    header nav {
+        margin-right: 0;
+    }
+
+    .work {
+        flex-wrap: wrap;
+    }
+
+    .work h2 {
+        text-align: center;
+        border-bottom: 5px solid var(--tertiary-color);
+        flex: none;
+        width: 30%;
+    }
+
+    .work div {
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+        padding: 20px 10px;
+    }
+
+    .pic div {
+        width: 60%;
+    }
+
+    .jumbo div {
+        width: 20%;
+    }
+
+    .contact-me ul {
+        flex: none;
+        border: none;
+    }
+
+    .contact-me h2 {
+        flex: none;
+    }
+
+}
+
+
 @media screen and (max-width: 980px) {
 
     section {
@@ -293,11 +348,12 @@ h4 {
 
     header {
         padding-bottom: 0;
-        justify-content: center;
+        
     }
 
-    header div h1 {
-        padding: 15px 20px 15px 20px;
+    header div {
+        text-align: center;
+        border-radius: 15px;
     }
 
     header nav ul li a {
@@ -325,27 +381,10 @@ h4 {
 
     /* work */
 
-    .work {
-        flex-wrap: wrap;
-    }
-
-    .work h2 {
-        text-align: center;
-        border-bottom: 5px solid var(--tertiary-color);
-        flex: none;
-        width: 30%;
-    }
-
-    .work div {
-        width: 100%;
-        margin-top: 20px;
-        border: none;
-        padding: 20px 10px;
-    }
-
+    
     /* the labels on pictures*/
     .pic div {
-        width: 60%;
+        width: 85%;
     }
 
     /* the label on jumbo picture */
@@ -357,7 +396,7 @@ h4 {
     /* contact me */
 
     .contact-me h2 {
-        flex: none;
+
         width: 40%;
         border-bottom: 5px solid var(--tertiary-color);
         text-align: center;
@@ -366,14 +405,163 @@ h4 {
     .contact-me ul {
         width: 100%;
         margin-top: 20px;
-        border: none;
+        
     }
 
     .contact-me ul li {
         text-align: center;
-        margin: 20px 0;
+        margin: 20px 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    header nav {
+        margin: 20px auto;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 15px;
+    }
+
+    .hero div {
+        margin: 0;
+    }
+
+    .hero h2 {
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        font-weight: lighter;
+    } 
+
+    .work h2 {
+        width: 40%;
+    }
+
+    .pic {
+        margin: 0 10px 25px 10px;
+    }
+
+    .pic div {
+        width: 100%;
+    }
+
+    .jumbo div {
+        width: 45%;
+    }
+
+    .contact-me h2 {
+        width: 60%;
+    }
+
+    .contact-me ul {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .contact-me ul li {
+        width: 80%;
     }
 
 
+}
+
+/* phone's screen */
+@media screen and (max-width: 575px) {
+
+    section {
+        padding: 15px;
+    }
+
+    header{
+        padding: 20px;
+        justify-content: center;
+    }
+
+
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
+    .hero div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        margin-bottom: 20px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .my-info h2 {
+        width: 80%;
+    }
+
+    .my-info div {
+        padding: 20px 30px;
+    }
+
+    /* changes text align of about me paragraphs */
+    .my-info div p {
+        text-align: left;
+    }
+
+    .work h2 {
+        width: 60%;
+    }
+
+    .pics {
+        justify-content: center;
+    }
+
+    .pic {
+        margin: 0 10px 25px 10px;
+        /* take these both out to have 2 pics per line */
+        width: 100%;
+        flex: none;
+    }
+
+    .pic div {
+        width: 70%;
+    }
+
+    .jumbo div {
+        width: 70%;
+    }
+
+    .contact-me h2 {
+        width: 80%;
+    }
+
+    .contact-me ul li {
+        width: 70%;
+    }
+
+    /* targets the second child (email) in "contact-me" ul */
+    .contact-me ul li:nth-child(2) {
+        /* allows word to break if container is too small */
+        overflow-wrap: break-word;
+    }
 
 }
