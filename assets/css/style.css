@@ -85,16 +85,23 @@ header nav ul li a:hover {
 
 .hero {
     background-image: url(../images/banner.jpg);
-    height: 250px;
     background-position: center;
     background-size: cover;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* makes h2 text stop stretching to match the height of the img */
+    align-items: center;
 }
 
-.hero img {
+.hero div {
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.hero div img {
     width: 200px;
     height: 200px;
-    position: absolute;
     top: 30px;
     left: 120px;
     border-radius: 50%;
@@ -105,8 +112,8 @@ header nav ul li a:hover {
     background: var(--secondary-color);
     border-radius: 25px;
     font-size: 42px;
-    position: absolute;
     padding: 15px 10px;
+    margin-left: 30px;
     bottom: 25px;
     right: 120px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
@@ -153,7 +160,7 @@ header nav ul li a:hover {
     /* 
     Tweak this when you add another pic to flex 
     */
-    flex: 1 16.6%;
+    flex: 1 16.7%;
 
 }
 
@@ -256,7 +263,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     border-left: 5px solid var(--tertiary-color);
-    flex: 3 71%;
+    flex: 3 70.7%;
     padding-left: 40px;
 }
 
@@ -273,3 +280,100 @@ h4 {
     text-decoration: none;
 }
 
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px) {
+
+    section {
+        padding: 40px;
+    }
+
+    /* header */
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header div h1 {
+        padding: 15px 20px 15px 20px;
+    }
+
+    header nav ul li a {
+        border-bottom: none;
+        font-size: 30px;
+    }
+
+    /* about me */
+
+    .my-info h2, .my-info div {
+        flex: none;
+        text-align: center;
+    }
+
+    .my-info h2 {
+        border-bottom: 5px solid var(--tertiary-color);
+        width: 40%;
+    }
+
+    .my-info div {
+        border: none;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /* work */
+
+    .work {
+        flex-wrap: wrap;
+    }
+
+    .work h2 {
+        text-align: center;
+        border-bottom: 5px solid var(--tertiary-color);
+        flex: none;
+        width: 30%;
+    }
+
+    .work div {
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+        padding: 20px 10px;
+    }
+
+    /* the labels on pictures*/
+    .pic div {
+        width: 60%;
+    }
+
+    /* the label on jumbo picture */
+    .jumbo div {
+        width: 30%;
+    }
+
+
+    /* contact me */
+
+    .contact-me h2 {
+        flex: none;
+        width: 40%;
+        border-bottom: 5px solid var(--tertiary-color);
+        text-align: center;
+    }
+
+    .contact-me ul {
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .contact-me ul li {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+
+
+}
