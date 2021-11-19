@@ -227,7 +227,8 @@ h4 {
 /* picture background images, jumbo is declared above in its own class */
 
 .pic-img-1 {
-    background-image: url(../images/placeholder-1.jpg);
+    background-image: url(../images/pass_gen.PNG);
+    background-position: top;
 }
 
 .pic-img-2 {
