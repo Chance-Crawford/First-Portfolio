@@ -71,14 +71,17 @@ header nav ul li a {
     margin: 0 10px;
     font-weight: lighter;
     font-size: 25px;
-    border-bottom: 5px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    transition: border-radius .5s, color .12s, background-color .12s, border-bottom .12s;
 }
 
 header nav ul li a:hover {
     color: var(--primary-color);
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     border-radius: 10px;
     border-bottom: none;
+    transition: color .25s, background-color .25s, border-bottom .25s;
+    
 }
 
 /* hero style */
@@ -186,6 +189,7 @@ header nav ul li a:hover {
     position: relative;
     flex: 1 40%;
     margin: 0 20px 25px 20px;
+    transition: all .25s ease-in-out;
 }
 
 /* height for normal pics in work */
@@ -195,6 +199,7 @@ header nav ul li a:hover {
 
 .pic:hover {
     opacity: 1;
+    transition: all .25s ease-in-out;
 }
 
 /* these styles only apply to the jumbo pic at top of "work" section
@@ -404,12 +409,15 @@ h4 {
     }
 
     .contact-me ul {
+        padding: 0;
         width: 100%;
         margin-top: 20px;
+        justify-content: center;
         
     }
 
     .contact-me ul li {
+        width: 80%;
         text-align: center;
         margin: 20px 5px;
     }
@@ -468,14 +476,6 @@ h4 {
         width: 60%;
     }
 
-    .contact-me ul {
-        justify-content: center;
-        padding: 0;
-    }
-
-    .contact-me ul li {
-        width: 80%;
-    }
 
 
 }
