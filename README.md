@@ -1,10 +1,7 @@
 # Portfolio
 
 ## Description
-My portfolio website for showcasing projects I have previously created.
-
-Links at the top of the header link to different sections of the page for convenience, and
-one link takes you to my resume on another site.
+My first portfolio website for showcasing projects I have created.
 
 Portfolio's "work" images are clickable and link you directly to the deployed URL of the
 projects.
