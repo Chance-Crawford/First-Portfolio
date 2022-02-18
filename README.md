@@ -15,7 +15,7 @@ Portfolio website is mobile responsive as well.
 * CSS
 
 ## Website
-https://chance-crawford.github.io/Portfolio/
+https://chance-crawford.github.io/First-Portfolio/
 
 ## Contribution
 Made by Chance Crawford
